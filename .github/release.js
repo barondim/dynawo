@@ -12,7 +12,7 @@
 */
 
 module.exports = async ({github, context, core, glob}) => {
-  // console.log({env: process.env});
+  console.log({env: process.env});
 
   function getInput(name, by_default = undefined) {
     const val = process.env[name] || by_default;
@@ -84,7 +84,6 @@ module.exports = async ({github, context, core, glob}) => {
       fail_on_files_errors:       getBooleanInput('fail_on_files_errors', false),
     };
 
-    /*
     console.log({
       owner,
       repo,
@@ -103,7 +102,6 @@ module.exports = async ({github, context, core, glob}) => {
       before_body,
       fail_on_files_errors
     });
-    */
 
     if (!input_tag_name && !release_id) {
       throw new Error("'release_id' or 'tag_name' is mandatory to identify or create a release");
