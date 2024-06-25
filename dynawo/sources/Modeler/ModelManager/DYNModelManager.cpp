@@ -1290,7 +1290,7 @@ ModelManager::printValuesParameters(std::ofstream& fstream) {
 }
 
 void
-ModelManager::printInitValuesParameters(std::ofstream& fstream) {
+ModelManager::printInitValuesParameters(std::ofstream& fstream) const {
   if (!hasInit())
     return;
   fstream << " ====== INIT PARAMETERS VALUES ======\n";
