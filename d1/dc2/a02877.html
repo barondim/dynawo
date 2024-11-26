@@ -169,9 +169,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#ab83835e5ce431fbd30e2fc0288855b89">importStaticParameters</a> ()=0</td></tr>
 <tr class="memdesc:ab83835e5ce431fbd30e2fc0288855b89"><td class="mdescLeft">&#160;</td><td class="mdescRight">import static parameters <br /></td></tr>
 <tr class="separator:ab83835e5ce431fbd30e2fc0288855b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab70045c218610a14d7ea244b77f5c4fd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#ab70045c218610a14d7ea244b77f5c4fd">configureCriteria</a> (const boost::shared_ptr&lt; <a class="el" href="../../da/d24/a01609.html">criteria::CriteriaCollection</a> &gt; &amp;criteria)=0</td></tr>
-<tr class="memdesc:ab70045c218610a14d7ea244b77f5c4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the criteria for this model  <a href="#ab70045c218610a14d7ea244b77f5c4fd">More...</a><br /></td></tr>
-<tr class="separator:ab70045c218610a14d7ea244b77f5c4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7877ad95dd2f64b905d49e5c67c29262"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#a7877ad95dd2f64b905d49e5c67c29262">configureCriteria</a> (const std::shared_ptr&lt; <a class="el" href="../../da/d24/a01609.html">criteria::CriteriaCollection</a> &gt; &amp;criteria)=0</td></tr>
+<tr class="memdesc:a7877ad95dd2f64b905d49e5c67c29262"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the criteria for this model  <a href="#a7877ad95dd2f64b905d49e5c67c29262">More...</a><br /></td></tr>
+<tr class="separator:a7877ad95dd2f64b905d49e5c67c29262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae080140fa11498e1ccc1c60634d1cd9f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#ae080140fa11498e1ccc1c60634d1cd9f">checkCriteria</a> (double t, bool finalStep)=0</td></tr>
 <tr class="memdesc:ae080140fa11498e1ccc1c60634d1cd9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if criteria for static model is respected  <a href="#ae080140fa11498e1ccc1c60634d1cd9f">More...</a><br /></td></tr>
 <tr class="separator:ae080140fa11498e1ccc1c60634d1cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +193,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:aa303994128dd1a2aa273eef4fd4023f9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#aa303994128dd1a2aa273eef4fd4023f9">dumpToFile</a> (const std::string &amp;filepath) const =0</td></tr>
 <tr class="memdesc:aa303994128dd1a2aa273eef4fd4023f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump the network to a file with the proper format  <a href="#aa303994128dd1a2aa273eef4fd4023f9">More...</a><br /></td></tr>
 <tr class="separator:aa303994128dd1a2aa273eef4fd4023f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab96c835117ed4ce47a53f36146736d74"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#ab96c835117ed4ce47a53f36146736d74">dumpToFile</a> (std::stringstream &amp;stream) const =0</td></tr>
+<tr class="memdesc:ab96c835117ed4ce47a53f36146736d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump the final state of the network in a stream  <a href="#ab96c835117ed4ce47a53f36146736d74">More...</a><br /></td></tr>
+<tr class="separator:ab96c835117ed4ce47a53f36146736d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fe64f91c9735ca519b6860e880e3e58"><td class="memItemLeft" align="right" valign="top">virtual boost::shared_ptr&lt; <a class="el" href="../../dd/d0d/a02929.html">ServiceManagerInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc2/a02877.html#a9fe64f91c9735ca519b6860e880e3e58">getServiceManager</a> () const =0</td></tr>
 <tr class="memdesc:a9fe64f91c9735ca519b6860e880e3e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve service manager associated with this data interface.  <a href="#a9fe64f91c9735ca519b6860e880e3e58">More...</a><br /></td></tr>
 <tr class="separator:a9fe64f91c9735ca519b6860e880e3e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -317,8 +320,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ab70045c218610a14d7ea244b77f5c4fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab70045c218610a14d7ea244b77f5c4fd">&#9670;&nbsp;</a></span>configureCriteria()</h2>
+<a id="a7877ad95dd2f64b905d49e5c67c29262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7877ad95dd2f64b905d49e5c67c29262">&#9670;&nbsp;</a></span>configureCriteria()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +332,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">virtual void DYN::DataInterface::configureCriteria </td>
           <td>(</td>
-          <td class="paramtype">const boost::shared_ptr&lt; <a class="el" href="../../da/d24/a01609.html">criteria::CriteriaCollection</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="../../da/d24/a01609.html">criteria::CriteriaCollection</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>criteria</em></td><td>)</td>
           <td></td>
         </tr>
@@ -349,12 +352,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/da4/a03005.html#a727de8ced9e5cb1b82adc780da8471cc">DYN::DataInterfaceIIDM</a>.</p>
+<p>Implemented in <a class="el" href="../../de/da4/a03005.html#ab056a4624329c61d5742e6bdd5ca4d68">DYN::DataInterfaceIIDM</a>.</p>
 
 </div>
 </div>
 <a id="aa303994128dd1a2aa273eef4fd4023f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa303994128dd1a2aa273eef4fd4023f9">&#9670;&nbsp;</a></span>dumpToFile()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa303994128dd1a2aa273eef4fd4023f9">&#9670;&nbsp;</a></span>dumpToFile() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,6 +389,42 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 
 <p>Implemented in <a class="el" href="../../de/da4/a03005.html#a7d9ac642c08aebdb17cf0ab9b7462032">DYN::DataInterfaceIIDM</a>.</p>
+
+</div>
+</div>
+<a id="ab96c835117ed4ce47a53f36146736d74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab96c835117ed4ce47a53f36146736d74">&#9670;&nbsp;</a></span>dumpToFile() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DYN::DataInterface::dumpToFile </td>
+          <td>(</td>
+          <td class="paramtype">std::stringstream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>dump the final state of the network in a stream </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>the stream to export to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../de/da4/a03005.html#ae4d080bbaaa8a95d8e3c2204fa1d74fb">DYN::DataInterfaceIIDM</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1122,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>DYN</b></li><li class="navelem"><a class="el" href="../../d1/dc2/a02877.html">DataInterface</a></li>
-    <li class="footer">Generated on Tue Nov 19 2024 18:21:06 for Dynawo by
+    <li class="footer">Generated on Tue Nov 26 2024 11:37:45 for Dynawo by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
